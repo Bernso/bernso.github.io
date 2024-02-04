@@ -1,0 +1,118 @@
+html{ 
+    color-scheme: light dark; 
+}
+
+
+.socialYTbutton:hover{
+    opacity: 0.7;
+}
+.socialYTbutton:active{
+    opacity: 0.3;
+}
+
+.socialYThyperlink{
+    color: white;
+    
+    text-decoration: wavy;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Logo{
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+.nav_links a,
+.cta,
+p,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(8, 134, 207, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(8, 134, 207, 0.8);
+}
+
+.socialheading,
+.socialTikTokbutton,
+.socialYTbutton{
+    font-family: "Montserrat";
+}
+
+.socialYTbutton{
+    background-color: red;
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 200px;
+    transition: opacity 500ms;
+    text-align: center;
+}
+
+.socialTikTokbutton{
+    background-color: black;
+    color: blue;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 200px;
+    transition: opacity 500ms;
+}
+
+.socialTikTokhyperlink{
+    color: rgba(128, 0, 128, 0.699);
+    text-decoration: wavy;
+}
