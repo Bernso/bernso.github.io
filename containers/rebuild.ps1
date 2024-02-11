@@ -1,4 +1,5 @@
 # pasteable
+cd C:\Users\benws\Desktop\NEW\1111\bernso.github.io\containers
 podman machine start
 podman rm -f bernso_container
 podman build -f .\Containerfile -t bernso:latest
