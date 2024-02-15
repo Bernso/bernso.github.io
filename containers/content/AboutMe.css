@@ -2,7 +2,7 @@ html{
     color-scheme: light dark;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,8 +12,6 @@ header {
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     font-family: "Montserrat";
 }
 
@@ -26,23 +24,23 @@ header {
 
 .nav_links a,
 .cta,
-.overlay__content a {
+.overlay__content a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
 }
 
-.nav_links {
+.nav_links{
     list-style: none;
     display: flex;
 }
 
-.nav_links li {
-    padding: 0px 20px;
+.nav_links li{
+    padding: 2px 20px;
 }
 
-.nav_links li a {
+.nav_links li a{
     transition: color 0.3s ease 0s;
 }
 
@@ -64,5 +62,9 @@ header {
 }
 
 a{
-    margin: 3px;
+    padding: 3px;
+}
+
+.Interests{
+    list-style: disc;
 }
