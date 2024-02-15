@@ -12,7 +12,6 @@ header{
 
 * {
     box-sizing: border-box;
-    padding: 0;
     font-family: "Montserrat";
 }
 
@@ -64,8 +63,4 @@ header{
 
 a{
     padding: 3px;
-}
-
-.Interests{
-    list-style: disc;
 }
