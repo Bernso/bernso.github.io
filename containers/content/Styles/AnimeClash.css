@@ -12,9 +12,7 @@ body{
 }
 
 
-* {
-    box-sizing: border-box;
-}
+
 
 html{
     color-scheme: light dark;
@@ -73,4 +71,11 @@ header {
 .cta:hover {
     background-color: rgba(8, 134, 207, 0.8);
     
+}
+
+
+.AnimClas .AnimeClash{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }
