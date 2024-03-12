@@ -15,7 +15,12 @@ if ($stateInfo.Host.MachineState -ne "Running"){
     Write-Host -foregroundcolor yellow 'Podman-machine not running: Staring-up'
     podman machine start
     $stateInfo = podman machine info --format json | convertfrom-json
-    Write-Host -foregroundcolor green 'Podman-machine' $stateInfo.Host.MachineState
+    if ($stateInfo.Host.MachineState -eq "Stopped"){
+        Write-Host -ForegroundColor Red 'There has been an error starting up podman'
+    }
+    else {
+        Write-Host -foregroundcolor green 'Podman-machine' $stateInfo.Host.MachineState
+    }
 }
 
 $container = "bernso_container"

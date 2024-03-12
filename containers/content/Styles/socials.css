@@ -116,3 +116,22 @@ p,
     color: rgba(128, 0, 128, 0.699);
     text-decoration: wavy;
 }
+
+.socialLinkTree{
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 200px;
+    transition: opacity 500ms;
+}
+
+.socialLinkTreehyperlink{
+    color: rgba(255, 255, 255, 0.699);
+    text-decoration: wavy;
+}
