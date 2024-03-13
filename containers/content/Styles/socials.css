@@ -101,23 +101,42 @@ p,
     
     text-decoration: wavy;
 }
+
+
 .socialTikTokbutton{
-    background-color: black;
-    color: blue;
+    background-color: rgb(0, 0, 0);
     border: none;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 5px;
+    border-radius: 20px;
+    color: rgb(25, 0, 255);
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
     cursor: pointer;
-    size: 200px;
-    transition: opacity 500ms;
+    vertical-align: top;
+    transition: backround-color 500ms, color 500ms, opacity 500ms, box-shadow 500ms;
+}
+
+.socialTikTokbutton:hover{
+    background-color: rgb(98, 81, 255);
+    color: rgb(29, 155, 240);
+    box-shadow: 0px 0px 10px rgb(29, 155, 240);
+}
+
+.socialTikTokbutton:active{
+    opacity: 0.4;
 }
 
 .socialTikTokhyperlink{
-    color: rgba(0, 0, 0, 0.699);
+    color: rgba(236, 94, 255, 0.699);
     text-decoration: wavy;
+    transition: color 400ms;
+}
+.socialTikTokhyperlink:hover{
+    color: aqua;
 }
 
 .socialLinkTree{
