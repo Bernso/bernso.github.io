@@ -31,17 +31,26 @@ header{
     text-decoration: none;
 }
 
-.nav_links{
-    list-style: none;
-    display: flex;
+nav {
+    margin: 0;
+    padding: 0;
 }
 
-.nav_links li{
+.nav_links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Add this line to remove margin */
+    padding: 0; /* Add this line to remove padding */
+}
+
+.nav_links li {
     padding: 2px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
     transition: color 0.3s ease 0s;
+    color: #edf0f1;
+    text-decoration: none;
 }
 
 .nav_links li a:hover {

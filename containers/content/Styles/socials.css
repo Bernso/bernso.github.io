@@ -10,11 +10,7 @@ html{
     opacity: 0.3;
 }
 
-.socialYThyperlink{
-    color: white;
-    
-    text-decoration: wavy;
-}
+
 
 header {
     display: flex;
@@ -84,20 +80,27 @@ p,
 }
 
 .socialYTbutton{
-    background-color: red;
-    color: white;
+    background-color: rgb(255, 0, 0);
     border: none;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 5px;
+    border-radius: 6px;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
     cursor: pointer;
-    size: 200px;
-    transition: opacity 500ms;
-    text-align: center;
+    vertical-align: top;
+    transition: backround-color 500ms, color 500ms, opacity 500ms, box-shadow 500ms;
 }
 
+.socialYThyperlink{
+    color: white;
+    
+    text-decoration: wavy;
+}
 .socialTikTokbutton{
     background-color: black;
     color: blue;
@@ -113,25 +116,38 @@ p,
 }
 
 .socialTikTokhyperlink{
-    color: rgba(128, 0, 128, 0.699);
+    color: rgba(0, 0, 0, 0.699);
     text-decoration: wavy;
 }
 
 .socialLinkTree{
-    background-color: aqua;
-    color: white;
+    background-color: rgb(153, 0, 255);
     border: none;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 5px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
     cursor: pointer;
-    size: 200px;
-    transition: opacity 500ms;
+    vertical-align: top;
+    transition: backround-color 500ms, color 500ms, opacity 500ms, box-shadow 500ms;
+}
+
+  .socialLinkTree:hover{
+    background-color: white;
+    color: rgb(29, 155, 240);
+    box-shadow: 0px 0px 40px rgb(29, 155, 240);
+}
+
+  .socialLinkTree:active{
+    opacity: 0.4;
 }
 
 .socialLinkTreehyperlink{
-    color: rgba(255, 255, 255, 0.699);
+    color: rgba(0, 0, 0, 0.699);
     text-decoration: wavy;
 }
