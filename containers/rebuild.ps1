@@ -32,3 +32,4 @@ Write-Host -foregroundcolor Blue 'building container image'
 podman build -f .\Containerfile -t $container':latest'
 Write-Host -foregroundcolor Blue 'running container'
 podman run --rm -d -p 8080:80 --name $container $container':latest'
+podman machine stop
