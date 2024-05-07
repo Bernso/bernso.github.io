@@ -1,72 +1,75 @@
-html{
-    color-scheme: light dark;
+/* Global styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; /* Use Montserrat 500 */
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Change as needed */
+    margin: 0;
+    padding: 0;
 }
 
-header{
+/* Header styles */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-color: #24252a;
+    background-color: #24252a; /* Change as needed */
+    color: #edf0f1; /* Change as needed */
+    padding: 20px;
 }
 
-* {
-    box-sizing: border-box;
-    font-family: "Montserrat";
-}
-
-.Logo{
+.Logo {
     cursor: pointer;
-    width: 100px;
-    border-radius: 5px;
-}
-
-
-.nav_links a,
-.cta,
-.overlay__content a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-nav {
-    margin: 0;
-    padding: 0;
 }
 
 .nav_links {
     list-style: none;
     display: flex;
-    margin: 0; /* Add this line to remove margin */
-    padding: 0; /* Add this line to remove padding */
 }
 
 .nav_links li {
-    padding: 2px 20px;
+    margin-right: 20px;
 }
 
-.nav_links li a {
-    transition: color 0.3s ease 0s;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-.nav_links li a:hover {
-    color: #0088a9;
-}
-
+.nav_links a,
 .cta {
-    padding: 9px 25px;
-    background-color: rgba(8, 134, 207, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+.nav_links a:hover,
 .cta:hover {
-    background-color: rgba(8, 134, 207, 0.8);
+    color: #0088a9; /* Change as needed */
 }
 
+/* Main content styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.interest {
+    background-color: #fff; /* Change as needed */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.interest h2 {
+    color: #333; /* Change as needed */
+}
+
+.interest p {
+    color: #666; /* Change as needed */
+}
+
+/* Hover animation */
+.interest:hover {
+    transform: scale(1.05);
+}
