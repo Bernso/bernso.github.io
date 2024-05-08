@@ -3,11 +3,9 @@ layout: page
 title: Project Bernso
 ---
 <pre>
-Welcome to project Bernso
+Welcome to Project Bernso
 
-## Refernce Documentation
-
-* [My Website](https://bernso.locum.dunz.net/index.html)
+Hi, my real website is: https://bernso.locum.dunz.net/
 
 
 
