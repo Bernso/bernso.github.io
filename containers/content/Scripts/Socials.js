@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         social.addEventListener('click', function() {
             const socialId = social.getAttribute('id');
             const socialLinks = {
+                'info': 'https://www.bernso.locum.dunz.net/social.html',
                 'youtube': 'https://www.youtube.com/@bernso2547',
                 'tiktok': 'https://www.tiktok.com/@.sher.11.1',
                 'linktree': 'https://linktr.ee/Bernso',
