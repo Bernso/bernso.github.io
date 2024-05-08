@@ -73,3 +73,8 @@ header {
 .interest:hover {
     transform: scale(1.05);
 }
+
+/* No more scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}

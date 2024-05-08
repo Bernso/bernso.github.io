@@ -45,3 +45,8 @@ header {
     text-decoration: none; /* Remove default underline */
 }
 
+
+/* No more scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}

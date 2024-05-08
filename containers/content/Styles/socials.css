@@ -117,3 +117,11 @@ header {
         margin: 10px 0;
     }
 }
+
+
+/* No more scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
