@@ -78,3 +78,9 @@ header {
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+/* Anything with this class will not have a cursor change */
+.no-cursor-on-this-please {
+    cursor: default;
+}

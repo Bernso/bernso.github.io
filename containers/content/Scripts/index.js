@@ -46,3 +46,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// opening links
+document.addEventListener('DOMContentLoaded', function() {
+    const socials = document.querySelectorAll('.subject');
+
+    socials.forEach(function(social) {
+        social.addEventListener('click', function() {
+            const socialId = social.getAttribute('id');
+            const socialLinks = {
+                'subject1': '/Socials.html',
+                'subject2': '/AboutMe.html',
+                'subject3': '#',
+                'subject4': 'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQnPCJsjsdbgpkqvTfgDQwhWXPpplMSTqrkXCTxlfZWJqtdZHcCmvZRjsssVzCwSgNnB',
+                
+            };
+            window.location.href = socialLinks[socialId];
+        });
+    });
+});
