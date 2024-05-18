@@ -4,7 +4,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     padding: 0;
 }
 
-
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -26,6 +25,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
 
 .social h2 {
@@ -36,6 +36,12 @@ body {
 .social p {
     font-size: 16px;
     color: #666666;
+}
+
+/* Zoom-in effect on hover */
+.social:hover {
+    transform: scale(1.05); /* Zoom in effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 /* Social buttons */
@@ -62,7 +68,6 @@ body {
 .social-button:hover {
     background-color: #005e73; 
 }
-
 
 /* Header styles */
 header {
@@ -118,12 +123,10 @@ header {
     }
 }
 
-
 /* No more scroll bar */
 ::-webkit-scrollbar {
     display: none;
 }
-
 
 /* Anything with this class will not have a cursor change */
 .no-cursor-on-this-please {

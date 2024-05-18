@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         social.addEventListener('click', function() {
             const socialId = social.getAttribute('id');
             const socialLinks = {
-                'info': 'https://www.bernso.locum.dunz.net/social.html',
+                'info': ' ', // Sends the suer to the same link
                 'youtube': 'https://www.youtube.com/@bernso2547',
                 'tiktok': 'https://www.tiktok.com/@.sher.11.1',
                 'linktree': 'https://linktr.ee/Bernso',
@@ -18,28 +18,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// JavaScript for enhancing social buttons
-document.addEventListener('DOMContentLoaded', function() {
-    const socialButtons = document.querySelectorAll('.social-button');
-
-    // Add hover effect and transition to social buttons
-    socialButtons.forEach(function(button) {
-        button.addEventListener('mouseenter', function() {
-            button.style.backgroundColor = darkenColor(button.style.backgroundColor, 0.1);
-        });
-
-        button.addEventListener('mouseleave', function() {
-            button.style.backgroundColor = lightenColor(button.style.backgroundColor, 0.1);
-        });
-    });
-
-    // Function to darken a color
-    function darkenColor(color, amount) {
-        return "#" + color.replace(/^#/, '').replace(/../g, color => ("0" + Math.floor(parseInt(color, 16) * (1 - amount)).toString(16)).substr(-2));
-    }
-
-    // Function to lighten a color
-    function lightenColor(color, amount) {
-        return "#" + color.replace(/^#/, '').replace(/../g, color => ("0" + Math.floor(parseInt(color, 16) * (1 + amount)).toString(16)).substr(-2));
-    }
-});
