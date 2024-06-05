@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
             subject.style.transform = `translateY(0)`;
             subject.style.transition = `opacity 0.5s ease ${delay}ms, transform 0.5s ease ${delay}ms`;
 
-            // Trigger animation when subject enters viewport
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         subject.style.transform = 'translateY(0)';
                     }
                 });
-            }, { threshold: 0.5 }); // Adjust threshold as needed
+            }, { threshold: 0.5 }); 
 
             observer.observe(subject);
         });
