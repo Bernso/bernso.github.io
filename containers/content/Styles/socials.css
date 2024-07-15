@@ -6,11 +6,28 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
     line-height: 1.6;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+    background-color: #f0f0f0; 
+    background-image: url('../Pics/aecc6d0db992d54252dff81dec954034.jpg');
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    -webkit-backdrop-filter: blur(2px); /* Chrome, Safari, Opera */
+    backdrop-filter: blur(2px); /* Firefox, Edge */
+}
+
+header {
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+/* Fallback for browsers that do not support backdrop-filter */
+@supports not ((-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px))) {
+    body {
+        background-color: rgba(240, 240, 240, 0.8); /* Adjust the opacity to achieve the desired blur effect */
+    }
 }
 
 .container {
@@ -22,7 +39,7 @@ body {
 .social {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #24252a;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
@@ -31,11 +48,12 @@ body {
 .social h2 {
     margin-bottom: 10px;
     font-size: 24px;
+    color: #edf0f1;
 }
 
 .social p {
     font-size: 16px;
-    color: #666666;
+    color: #edf0f1a2;
 }
 
 /* Zoom-in effect on hover */

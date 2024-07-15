@@ -13,7 +13,22 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0; 
+    background-color: #24252a; 
+    background-image: url('../Pics/aecc6d0db992d54252dff81dec954034.jpg');
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    -webkit-backdrop-filter: blur(2px); /* Chrome, Safari, Opera */
+    backdrop-filter: blur(2px); /* Firefox, Edge */
+}
+
+/* Fallback for browsers that do not support backdrop-filter */
+@supports not ((-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px))) {
+    body {
+        background-color: #24252a;
+        opacity: 0.8; /* Adjust the opacity to achieve the desired blur effect */
+    }
 }
 
 /* Header styles */
@@ -36,7 +51,8 @@ header {
     transition: opacity 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease; 
     padding: 20px;
     border-radius: 8px;
-    background-color: #fff; 
+    background-color: #24252a;
+    color: #edf0f1; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
